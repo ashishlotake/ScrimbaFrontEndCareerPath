@@ -201,20 +201,43 @@ p {
     font-size: 16px;
 }
 
-h2,h3 {
+ul h2,h3 {
     font-size: 16px;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    border-top: 2px solid var(--publish-hover-color);   
-    padding-top: 25px; 
+    border-top: 3px solid var(--publish-hover-color);   
 }
 
 
-footer button {
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+}
+
+footer ul li {
+    padding: 12px;
+    border-radius: 8px;
     flex-grow: 1;
+    text-align: center;
+    background-color: var(--like-button-color);
+    border: 0;
+    transition: all .2s cubic-bezier(.455,.03,.515,.955);
+
+}
+
+footer ul li:hover {
+    box-shadow: 5px 5px 0px var(--like-button-hover-color);
+    transition: all .2s cubic-bezier(.455,.03,.515,.955);
+    cursor: pointer; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--like-button-hover-color);
+
 }
