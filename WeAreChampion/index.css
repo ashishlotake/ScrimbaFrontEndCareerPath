@@ -179,7 +179,7 @@ ul li div {
 button {
     background-color: var(--like-button-color);
     border-radius: 8px;
-    padding: 0px 20px;
+    padding: 15px 22px;
     border: 0;
     transition: all .2s cubic-bezier(.455,.03,.515,.955);
 }
@@ -203,4 +203,18 @@ p {
 
 h2,h3 {
     font-size: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-top: 2px solid var(--publish-hover-color);   
+    padding-top: 25px; 
+}
+
+
+footer button {
+    flex-grow: 1;
 }
