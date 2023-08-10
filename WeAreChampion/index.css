@@ -206,38 +206,43 @@ ul h2,h3 {
 }
 
 footer {
-    border-top: 3px solid var(--publish-hover-color);   
+    border-top: 3px solid var(--publish-hover-color);
+    padding: 0pc
 }
 
 
 footer ul {
     list-style-type: none;
-    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
-footer ul li {
-    padding: 12px;
+footer ul a {
+    background-color: transparent;
+    text-align: center;
     border-radius: 8px;
     flex-grow: 1;
     text-align: center;
     background-color: var(--like-button-color);
     border: 0;
     transition: all .2s cubic-bezier(.455,.03,.515,.955);
+    text-decoration: none;
+    color: var(--like-button-hover-color);
 
 }
 
-footer ul li:hover {
+footer ul a:hover {
     box-shadow: 5px 5px 0px var(--like-button-hover-color);
     transition: all .2s cubic-bezier(.455,.03,.515,.955);
     cursor: pointer; 
 }
 
-a {
-    text-decoration: none;
-    color: var(--like-button-hover-color);
 
+
+footer ul li {
+    background-color: transparent;
+    text-align: center;
+    padding: 12px;
 }
