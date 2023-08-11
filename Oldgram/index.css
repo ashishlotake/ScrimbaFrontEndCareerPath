@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('font/SourceSansPro-Regular.ttf');
+}  
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('font/SourceSansPro-Bold.ttf');
+    font-weight: bold;
+}  
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+    
+}
+
+
+/* ---------------------------------- */
+/* when screen size goes beyond 600px */
+
+ @media screen and (min-width: 600px) {
+    body {
+        /* background-color: red; */
+        width: 600px;
+        border-left: 2px #C6C6C6 solid;
+        border-right: 2px #C6C6C6 solid;
+        margin: auto;
+        font-size: 17px; 
+    }
+
+ }
+
+
+
+ /* ---------------------------------- */
+
+ /* --------------Header-------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px #C6C6C6 solid;
+    padding: 10px 15px 15px 15px;
+    
+}
+
+.logo {
+    width: 90px;
+    height: 40px;
+    display: inline-block;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    object-fit: cover;
+    
+}
+
+
+/* ------------------------------------------ */
+
+.card {
+    border-bottom: 2px solid #EDEDED;
+    
+}
+.name-loc {
+    display: flex;
+    gap: 8px;
+}
+
+h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+#post-img {
+    width: 100%;
+}
+
+.lowerinfo, .name-loc {
+    padding: 15px;
+}
+
+
+.icons-layout {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 8px;
+}
+
+.icon {
+    width: 20px;
+    height: 21px;
+}
+
+.hearticon {
+    width: 22px;
+    height: 22px;
+}
+
+p {
+    margin: 5px 0px 0px 0px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: white;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    transition: all .2s cubic-bezier(.455,.03,.515,.955);
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.btn:hover, .btn:active {
+    background-color: #C6C6C6;
+    color: black;
+    transition: all .2s cubic-bezier(.455,.03,.515,.955);
+}
+
+.btn:active {
+    /* box-shadow: -1px -1px 1px black; */
+    background-color: #C6C6C6;
+}
+
