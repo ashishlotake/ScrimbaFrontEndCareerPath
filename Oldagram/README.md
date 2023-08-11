@@ -1,7 +1,7 @@
 # Oldagram
 
 [![We Are Champion Preview](Preview.png "We Are Champion Preview")](https://oldagram.pages.dev)
-[Live Site](://oldagram.pages.dev/)
+[Live Site](https://oldagram.pages.dev/)
 
 
 ## What?

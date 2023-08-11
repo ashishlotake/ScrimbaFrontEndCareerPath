@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!--  -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <!--  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="card">
+            <div>
+                <h1><span class="h1-1">Generate a</span> <br> 
+                    <span class="green"> Random Password </span>
+                </h1>
+                <p>Never use an insecure password again.</p>
+                <div >
+                    <div class="showlength" >
+                        <input id="slider-len" type="range" min="8" max="25" value="10" step="1" >
+                        <br>
+                        Lenght :<span  id="value">10</span>
+                    </div> 
+                    <div class="filter">
+                        
+                        <label>
+                            <input id="zero-nine" type="checkbox">
+                            0-9 : <span></span>
+                            
+                        </label>
+                        <label>
+                            <input id="specialChar" type='checkbox'>
+                            !@#$%^&* : <span></span>
+                            
+                        </label>
+
+                    </div>
+
+                </div>
+                    <button id="password-gen" onclick="passwordFill()">Generate passwords</button>
+                <hr>
+            </div>
+        
+        <!-- passwords -->
+            <div class="password-section">
+                <button id="password-1" onclick="handleClick1()" class="password"></button>
+                <button id="password-2" onclick="handleClick2()" class="password"></button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    /* margin: 50px; */
+    background-color: #1F2937;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    font-family: 'Karla', sans-serif;
+}
+
+.green {
+    color: #4ADF86;
+}
+
+hr {
+    color: #2F3E53;
+    margin: 38px 0px 33px 0px;
+}
+
+button {
+    font-size: 18px;
+    border-radius: 6px;
+    height: 42px;
+    font-weight: 500;
+}
+
+button:hover, button:active {
+    box-shadow: 5px 5px #fff;
+}
+
+#password-gen {
+    border: none;
+    background-color: #10B981;
+    padding: 9px 20px;
+    color: white;
+    margin-top: 40px;
+
+}
+
+.password-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.password {
+    color: #55F991;
+    background-color: #273549;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 250px;
+}
+
+.card {
+    padding: 50px;
+    /* width: 450px; */
+}
+
+p {
+    color: #D5D4D8;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 10px
+}
+
+
+
+
+/* for checkbox */
+
+label input {
+  display: none; /* Hide the default checkbox */
+
+}
+
+/* Style the artificial checkbox */
+label span {
+    margin-top: 10px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #D5D4D8;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    color: #4B5563;
+}
+
+/* Style its checked state...with a ticked icon */
+[type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -1px;
+  left: 2px;
+  color: #10B981;
+}
+
+/* slider */
+
+.showlength {
+    color: #4B5563;
+}
+
+#slider-len {
+    padding: 3px 0px;
+  /* background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%); */
+  border: solid 2px #10B981;
+  border-radius: 10px;
+  height: 7px;
+  outline: #10B981;
+  -webkit-appearance: none;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.h1-1 {
+    font-size: 38px;
+}
+
+p {
+    font-size: large;
+}
