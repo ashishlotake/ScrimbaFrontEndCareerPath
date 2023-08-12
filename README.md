@@ -11,3 +11,6 @@
 ## 3. Oldagram (Instagram clone) 
 [![Oldagram](Oldagram/Preview.png)](https://oldagram.pages.dev/)
 [Live Site](https://oldagram.pages.dev/)
+
+
+https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41

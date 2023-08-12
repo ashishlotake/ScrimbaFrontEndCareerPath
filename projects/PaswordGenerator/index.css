@@ -17,7 +17,7 @@ h1 {
 
 hr {
     color: #2F3E53;
-    margin: 38px 0px 33px 0px;
+    margin: 22px 0px 15px 0px;
 }
 
 button {
@@ -57,8 +57,9 @@ button:hover, button:active {
 }
 
 .card {
-    padding: 50px;
+    /* padding: 30px; */
     /* width: 450px; */
+    margin: auto;
 }
 
 p {
