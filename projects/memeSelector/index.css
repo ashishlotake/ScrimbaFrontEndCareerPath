@@ -11,7 +11,7 @@ body {
     gap:10px;
     align-items: center;
     display: flex;
-    width: 370px;
+    width: 100%;
     margin: auto;
 }
 
@@ -121,6 +121,18 @@ button {
     height: 490px;
     background-color: #fff0ee;
 }
+
+@media screen and (max-width: 420px) {
+    .modal {
+        width: 85%;
+        height: 65%;
+        /* background-color: rebeccapurple; */
+    }
+    .cat-img{
+        width: 85%;
+    }
+
+ }
 
 .modal-close-btn{
     position: absolute;
