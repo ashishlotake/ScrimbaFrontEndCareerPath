@@ -1,0 +1,107 @@
+html, body {
+    background-color: lightblue;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.15;
+}
+
+
+.modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    height: 410px;
+    width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #212529;
+    color: whitesmoke;
+    box-shadow: 0px 0px 6px 2px #666;
+    /* display: none; */
+}
+
+.modal-inner {
+    width: 300px;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 23px;
+    font-size: 18px;
+}
+.message {
+    height: 160px;
+    margin-bottom: 0;
+
+}
+
+.modal-inner-loading {
+    text-align: center;
+    /* font-size: 20px; */
+}
+.input-box {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+input {
+    border-radius: 5px;
+    border: 1px solid #212529;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 24px;
+    width: 100px;
+}
+
+.buttons-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.close-btn-container {
+    text-align: end;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: whitesmoke;
+    opacity: 0.2;
+    padding: 10px 30px 0 0;
+    width: 20px;
+}
+
+.reverse {
+    /* flex-direction: row-reverse; */
+    flex-direction: row-reverse;
+}
+
+
+.loading {
+    width: 100%;
+}
+
+.idiot-gif{
+    margin: 0 auto;
+}
+.idiot-gif img{
+    box-shadow: 1px 1px 3px #999;
+    border-radius: 5px;
+}
+
+.modal-display-name {
+    color: fuchsia;
+}
