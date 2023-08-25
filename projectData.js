@@ -35,6 +35,12 @@ export const projectInfo = [
         "mp4": "projects/memeSelector/preview.mp4",
         "indexhtml": "projects/memeSelector/index.html"
     },
+    {
+        "name": " Twimba",
+        "des": "Twimba (Twitter Clone)",
+        "mp4": "projects/twimba/preview.mp4",
+        "indexhtml": "projects/twimba/index.html"
+    },
 
 
 

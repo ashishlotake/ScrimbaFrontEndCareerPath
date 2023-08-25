@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #181A1B; */
+    /* color: white; */
+} 
+
+h5{
+    margin: 5px 0px 5px 0px;
+}
+
+h1{
+    margin: 0;    
+    padding: 20px 16px;
+    color: rgba(29, 155, 240, 1);
+}
+
+
+main {
+    /* width: 600px; */
+    /* margin: auto; */
+    border-left: 1px solid rgb(239, 243, 244);
+    border-right: 1px solid rgb(239, 243, 244);
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        width: 600px;
+        margin: auto;
+
+    }
+
+    .icons {
+        display: hidden;
+    }
+
+ }
+
+
+header {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+header img {
+    width: 60px;
+    height: 65px;
+    transform: rotate(25deg);
+}
+
+/* the tweet card */
+
+.submitSection {
+    
+    /* text-align: end; */
+    padding: 8px 16px;
+    display: flex;
+    border-top: 1px solid rgb(239, 243, 244);
+    border-bottom: 1px solid rgb(239, 243, 244);
+    /* border: 2px salmon solid; */
+
+
+}
+
+
+.submitSection:nth-child(odd){
+    border-bottom:none;
+ }
+ .submitSection:nth-last-child(2),
+ .submitSection:nth-last-child(2) ~ .submitSection{
+    border-bottom:0;
+ }
+
+
+#tweetLs{
+    border-bottom: 1px solid rgb(239, 243, 244);
+}
+
+
+.wholeTweet {
+    width: 100%;
+    margin-left: 12px; 
+    line-height: 20px;
+    /* border: 2px salmon solid; */
+}
+
+.textInput {
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 99%;
+    height: 40px;
+    border: none;
+    outline: none;
+    /* background-color: rgba(239, 243, 244, 0.4); */
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+}
+
+#tweetText{    
+    padding: 0;
+    height: 60px;
+    font-size: 18px;
+    padding-top: 5px;
+
+}
+
+
+
+
+.twitterHandel{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    /* margin: 20px; */
+}
+
+
+button{
+    color: white;
+    transition-duration: 0.3s;
+    background-color: rgb(29, 155, 240);
+    border: none;
+    cursor: pointer;
+}
+
+#tweetBtn {
+    padding: 0px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    min-height: 36px;
+    border-radius: 9999px;
+    opacity: 0.7;
+    height: 25px;
+
+}
+
+button:hover{
+    opacity: 1;
+    transition-duration: 0.3s;
+
+}
+
+
+.buttonAreas{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid rgb(239, 243, 244);
+    
+}
+
+
+.blue {
+    color: rgb(29, 155, 240);
+    fill: rgb(29, 155, 240);
+}
+
+
+
+.icons {
+    width: 30px;
+    height:  30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.iconList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+svg {
+    width: 18px;
+    height: 18px;
+}
+
+.icons:hover{
+    background-color: rgba(29, 155, 240, 0.2);
+    transition-duration: 0.3s;
+}
+
+.handel {
+    font-weight: 400;
+    color: #536471;
+    margin-left: 3px;
+}
+
+.shareLs {
+    margin-top: 5px;
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.makeIcon {
+    display: flex;
+    align-self: center;
+    padding: 8px;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.makeIcon:hover {
+    background-color: rgba(29, 155, 240, 0.2);
+    transition-duration: 0.3s;
+    color: rgb(29, 155, 240);;
+}
+
+.heart:hover {
+    color: rgb(249, 24, 128);
+    background-color: rgba(249, 24, 128, 0.2);
+    transition-duration: 0.3s;
+}
+
+.liked {
+    color: rgb(249, 24, 128);
+}
+
+.retweeted {
+    color: rgb(0, 186, 124);
+}
+
+
+.retweet:hover {
+    color: rgb(0, 186, 124);
+    background-color: rgba(0, 186, 124, 0.2);
+    transition-duration: 0.3s;
+}
+
+
+.commentSection {
+    margin-left: 80px;
+    padding: 8px 16px;
+
+}
+
+
+
+ .hidden {
+    display: none;
+ }
+
+
+
+
+.reply-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    border: 1px solid rgba(29, 155, 240, 2);
+    background-color: rgba(29, 155, 240, 2);
+    color: white;
+
+}
