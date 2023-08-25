@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 
 
-if (localStorage.getItem("tweetsDat")){
+if (localStorage.getItem("tweetsDat")==null){
     localStorage.setItem("tweetsData", JSON.stringify(tweetsDatas))
 }
 const tweetsData = JSON.parse(localStorage.getItem("tweetsData"));
