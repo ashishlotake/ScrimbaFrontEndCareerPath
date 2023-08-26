@@ -3,8 +3,9 @@ import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 
 
-if (localStorage.getItem("tweetsDat")==null){
+if (localStorage.getItem("tweetsData")==null){
     localStorage.setItem("tweetsData", JSON.stringify(tweetsDatas))
+    // const tweetsData = JSON.parse(localStorage.getItem("tweetsData"));
 }
 const tweetsData = JSON.parse(localStorage.getItem("tweetsData"));
 
@@ -17,10 +18,11 @@ tweetTextIn.addEventListener("input", function(){
     if (tweetTextIn.value){
         
         tweetBtn.style.opacity=1
-        // console.log("s")
+        // tweetBtn.style.cursor="pointer"
     }
     else {
 
+        // tweetBtn.style.cursor="none"
         tweetBtn.style.opacity=0.5
     }
 
@@ -44,6 +46,7 @@ tweetBtn.addEventListener("click",function(){
             isRetweeted: false,
             uuid: uuidv4()
         })
+        tweetBtn.style.opacity=0.5
         render()
         tweetTextIn.value=''
     }
@@ -67,10 +70,11 @@ document.addEventListener("click", function(e){
     }
     else if (e.target.dataset.rplycmnt ){
 
-        console.log(e.target.dataset.rplycmnt)
+        // console.log(e.target.dataset.rplycmnt)
 
 
-        if (document.getElementById(`myTextarea-${e.target.dataset.rplycmnt}`)){
+        if (document.getElementById(`myTextarea-${e.target.dataset.rplycmnt}`).value){
+
             const replycmnt = document.getElementById(`myTextarea-${e.target.dataset.rplycmnt}`)
             let tweetObj = getTweetObjFrmUID(e.target.dataset.rplycmnt)
             let singleRply =     {
@@ -80,7 +84,7 @@ document.addEventListener("click", function(e){
                 tweetText: `${replycmnt.value}`
             }
             tweetObj.replies.unshift(singleRply)
-            console.log(tweetObj.replies)
+            // console.log(tweetObj.replies)
             replycmnt.value = ''
             render()
         }
@@ -225,7 +229,7 @@ function render(){
                     <div class="submitSection commentSection">
                         <img class="twitterHandel" src="images/ashish.png">
                                 <div class="wholeTweet reply-post">
-                                    <textarea id="myTextarea"  placeholder="any thouhjt!"></textarea>
+                                    <textarea id="myTextarea-${tweet.uuid}"  placeholder="any thouhjt!"></textarea>
                                 <div>
                                 <i class="blue makeIcon fa-solid fa-reply" data-rplycmnt="${tweet.uuid}"></i>
                             </div>
@@ -236,7 +240,6 @@ function render(){
  
         `
     })
-    console.log(uuidv4())
     localStorage.setItem("tweetsData", JSON.stringify(tweetsData))
     document.getElementById("tweetLs").innerHTML = tweetStr
 }
