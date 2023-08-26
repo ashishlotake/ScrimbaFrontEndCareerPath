@@ -12,7 +12,20 @@ const tweetTextIn = document.getElementById("tweetText")
 const tweetBtn = document.getElementById("tweetBtn")
 
 
+tweetTextIn.addEventListener("input", function(){
+    // console.log(tweetTextIn)
+    if (tweetTextIn.value){
+        
+        tweetBtn.style.opacity=1
+        // console.log("s")
+    }
+    else {
 
+        tweetBtn.style.opacity=0.5
+    }
+
+
+})
 
 tweetBtn.addEventListener("click",function(){
 
@@ -212,7 +225,7 @@ function render(){
                     <div class="submitSection commentSection">
                         <img class="twitterHandel" src="images/ashish.png">
                                 <div class="wholeTweet reply-post">
-                                    <textarea id="myTextarea-${tweet.uuid}"  placeholder="any thouhjt!"></textarea>
+                                    <textarea id="myTextarea"  placeholder="any thouhjt!"></textarea>
                                 <div>
                                 <i class="blue makeIcon fa-solid fa-reply" data-rplycmnt="${tweet.uuid}"></i>
                             </div>
