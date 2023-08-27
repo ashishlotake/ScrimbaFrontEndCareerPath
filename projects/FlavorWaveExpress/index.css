@@ -1,0 +1,381 @@
+:root {
+    --orangeLight: #db8a6c;
+    --orangeLighter: #e5ab95;
+    --orange: #d16943;
+    --lightblack: lightgray;
+    --offwhit: #fffef6;
+    --black: #1a1a1a;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding: 15px;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    color: var(--black);
+    position: relative;
+}
+
+
+
+.content {
+    opacity: 1;
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+
+.footer {
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    font-size: 12px;
+    padding-top: 15px;
+    border-top: 1px solid var(--lightblack);
+    color: #282828;
+    font-weight: 100;
+}
+
+footer a{
+    color: #282828;
+    text-decoration: none;
+}
+  
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid var(--black);
+    margin: 0px 0px 0px 0px;
+    border-radius: 40px;
+    background-color: var(--offwhit);
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    width: 130px;
+}
+
+
+h1, h2, h3, p {
+    margin: 0;
+} 
+
+.banner h2 {
+    margin: 0;
+    letter-spacing: 4px;
+    line-height: 1.2;
+}
+
+.banner h1 {
+    letter-spacing: 8.8px;
+    border-bottom:  3px var(--orangeLight) solid;
+    /* text-decoration: underline; */
+    padding-bottom: 3px;
+    margin-left: 5px;
+}
+
+
+/*  */
+
+.itemsLs {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    border-top: 3px solid var(--black);
+}
+
+/* .item:last-child {
+    border-bottom: 0;
+} */
+
+.item {
+    border-bottom: 1px solid var(--lightblack);
+    padding: 10px 0px;
+}
+
+.itemImg{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 100%;
+    /* background-position: center; */
+}
+
+.itemDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.food {
+    display: flex;
+    gap: 15px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    gap: 10px;
+    font-size: 25px;
+    /* flex-direction: column; */
+}
+
+.counter > div {
+    width: 16px;
+    /* padding-right: 3px; */
+}
+
+button{
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.incDecBtn {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.removeBtn {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.heading{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.orderPrice {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    /* padding-bottom: 10px; */
+    border-bottom: 3px solid #282828;
+
+}
+
+.totalCart {
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+
+
+.placeoder  {
+    margin: 40px 0px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid var(--orange);
+    background-color: var(--offwhit);
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    /* width: 100%; */
+    font-size: 20px;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+/* .orderLogo {
+} */
+
+
+
+.orderLogo {
+    width: 100px;
+}
+    
+button p{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: 100%;
+    color:  var(--orangeLight);
+    text-shadow: 1px -1px 1px  var(--black);
+
+
+}
+
+#modal{
+    width: 70%;
+    height: 410px;
+    border: var(--black) 2px solid;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    overflow-y: hidden;
+}
+
+.closeBtn{
+    margin-left: auto;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: var(--orangeLighter);
+    border: 1px solid var(--orange);
+    border-radius: 100%
+}
+
+
+#modal>input {
+    /* all: unset; */
+    font-size: 18px;
+    border: 1px solid var(--orange);
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+/* hide Hide Arrows From Input Number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*  */
+
+.cart {
+    border: 1px solid var(--black);
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.priceOrder {
+    font-size: 18px;
+}
+
+
+/* ------------------------------------------------ */
+
+/* css module */
+.flexSpBtw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.width-100px {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity{
+    opacity: 0.5;
+    cursor: default;
+}
+
+
+/* when screen size goes above 600px */
+@media only screen and (min-width: 600px) {
+    body {
+        width: 600px;
+
+    }
+    #modal {
+        width: 40%;
+    }
+}
+
+
+
+/*  */
+
+.rateStar {
+    padding: 20px 0px ;
+    float: left;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.rateStar:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rateStar:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rateStar:not(:checked) > label:before {
+    content: '★ ';
+}
+.rateStar > input:checked ~ label {
+    color: #ffc700;    
+}
+.rateStar:not(:checked) > label:hover,
+.rateStar:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rateStar > input:checked + label:hover,
+.rateStar > input:checked + label:hover ~ label,
+.rateStar > input:checked ~ label:hover,
+.rateStar > input:checked ~ label:hover ~ label,
+.rateStar > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.rateHead {
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    border-top: 3px solid var(--black);
+}
+
+.successfullOrder {
+    background-color: #ECFDF5;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

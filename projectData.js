@@ -41,7 +41,11 @@ export const projectInfo = [
         "mp4": "projects/twimba/preview.mp4",
         "indexhtml": "projects/twimba/index.html"
     },
-
-
+    {
+        "name": "FlavorWave Express",
+        "des": "Riding the Tides of Taste with FlavorWave Express: Your Culinary Journey, Delivered",
+        "mp4": "projects/FlavorWaveExpress/preview.mp4",
+        "indexhtml": "projects/FlavorWaveExpress/index.html"
+    },
 
 ]

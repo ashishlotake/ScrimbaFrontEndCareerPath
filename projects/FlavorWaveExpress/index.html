@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--  Font -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+        <!--  -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
+        <meta name="msapplication-TileColor" content="#fffef6">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- Meta Data -->
+        <title> FlavorWave Express | Ashish Lotake </title>
+        <meta name="description" content=" Riding the Tides of Taste with FlavorWave Express: Your Culinary Journey, Delivered | Ashish Lotake ">
+
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content=" FlavorWave Express | Ashish Lotake ">
+        <meta itemprop="description" content=" Riding the Tides of Taste with FlavorWave Express: Your Culinary Journey, Delivered | Ashish Lotake ">
+        <meta itemprop="image" content="http://scrimbafrontendcareerpath.pages.dev/projects/FlavorWaveExpress/og.png">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://scrimbafrontendcareerpath.pages.dev/projects/FlavorWaveExpress/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content=" FlavorWave Express | Ashish Lotake ">
+        <meta property="og:description" content=" Riding the Tides of Taste with FlavorWave Express: Your Culinary Journey, Delivered | Ashish Lotake ">
+        <meta property="og:image" content="http://scrimbafrontendcareerpath.pages.dev/projects/FlavorWaveExpress/og.png">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content=" FlavorWave Express | Ashish Lotake ">
+        <meta name="twitter:description" content=" Riding the Tides of Taste with FlavorWave Express: Your Culinary Journey, Delivered | Ashish Lotake ">
+        <meta name="twitter:image" content="http://scrimbafrontendcareerpath.pages.dev/projects/FlavorWaveExpress/og.png">
+        
+        <!-- Enable Mobileview -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="content" class="content">
+            <div class="banner ">
+                <img class="logo" src="images/logo.png">
+                <h2>FLAVORWAVE </h2>
+                <h1>EXPRESS</h1>
+            </div>
+            <div class="heading ">
+                <h2 id="heading">Menu</h2>
+            </div>
+            <div id="itemsLs" class="itemsLs">
+                
+            </div>    
+            <div id="cartArea" class="text-center">
+                <h3 id="cartHeading" class="heading">Cart</h3>
+
+                <div id="orderPrice" class="orderPrice"></div>
+                <div class="totalCart flexSpBtw">
+                    <p>Total Price</p>
+                    <p id="finalValue">0 $</p>
+                </div>
+                <button id="buybutton" data-placeorder="placeorder" class="placeoder">
+                    <!-- <img class="logo orderLogo" src="images/logo2.png"> -->
+                    <!-- <p>LET's GET COOKiNG</p> -->
+                    LET's GET COOKiNG
+                </button>
+            </div> 
+        </div>
+
+
+            <form id="modal">
+                <div data-closebtn="closebtn" class="closeBtn">X</div>
+                <h2>ENTER CARD DETAIL</h2>
+                <input id="name" required type="text" placeholder="Enter your name" >
+                <input required type="number" placeholder="Enter card number" >
+                <input required type="number" placeholder="Enter CVV"  >
+                <button id="submit" type="submit" value="submit" class="placeoder">
+                    PAY
+                </button>
+            </form>
+
+        <footer class="footer flexSpBtw">
+            <p>Made with ❤️ by @AshishLotake</p>
+            <p>
+                <a href="https://mastodon.social/@ashishlotake" target="_blank">Mastodon</a>
+                <a href="https://www.github.com/ashishlotake/" target="_blank">Github</a>
+                <a href="https://twitter.com/Ashish02lotake" target="_blank">Twitter</a> 
+                <a href="https://bsky.app/profile/ashishlotake.com" target="_blank">BlueSky</a>                
+
+            </p>
+        </footer>
+        <!-- Link JS -->
+        <script src="index.js" type="module"></script>
+
+    </body>
+</html>
+
