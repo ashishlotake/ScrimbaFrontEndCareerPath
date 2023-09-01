@@ -154,8 +154,18 @@ h2 {
     margin-top: 5px;
 }
 
-footer ul {
+
+footer {
+    /* display: flex; */
+    text-align: center;
     padding: 20px 0px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
