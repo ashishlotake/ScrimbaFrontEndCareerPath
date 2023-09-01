@@ -1,0 +1,10 @@
+{
+    "name":"Ashish Lotake | Scrimba The Front-End Developer Career Path",
+    "short_name":"Ashish Lotake Scrimba The Front-End Developer Career Path certification",
+    "icons":[
+        {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
+        {"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+        ],
+    "theme_color":"#dad7cd",
+    "background_color":"#dad7cd",
+    "display":"standalone"}

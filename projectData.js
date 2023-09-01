@@ -47,5 +47,12 @@ export const projectInfo = [
         "mp4": "projects/FlavorWaveExpress/preview.mp4",
         "indexhtml": "projects/FlavorWaveExpress/index.html"
     },
+    {
+        "name": "Responsive Design",
+        "des": "Mobile-First approach, responsive design principles using (em, rem & %) responsive units.",
+        "mp4": "projects/responsiveDesign/preview.mp4",
+        "indexhtml": "projects/responsiveDesign/index.html"
+    },
 
 ]
+

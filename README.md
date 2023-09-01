@@ -5,6 +5,11 @@
 
 [Scrimba - The Frontend Developer Career Path](https://scrimba.com/learn/frontend)
 
+## 9.  Responsive Design 
+[![ResponsiveDesign](projects/responsiveDesign/preview.png)](https://scrimbafrontendcareerpath.pages.dev/projects/responsiveDesign/)
+[Preview](https://scrimbafrontendcareerpath.pages.dev/projects/responsiveDesign/)
+
+
 ## 8.  Twimba (Twitter Clone) 
 [![Oldagram](projects/FlavorWaveExpress/preview.jpg)](https://scrimbafrontendcareerpath.pages.dev/projects/FlavorWaveExpress/)
 [Preview](https://scrimbafrontendcareerpath.pages.dev/projects/FlavorWaveExpress/)
